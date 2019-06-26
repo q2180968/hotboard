@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 
 # Create your models here.
@@ -12,6 +13,8 @@ class Source(models.Model):
     image = models.ImageField(upload_to='source/%Y/%m', verbose_name='封面图', max_length=100,
                               default='course/default.png')
     kind = models.ForeignKey("Kind", verbose_name="来源类型")
+    click_times = models.IntegerField(default=0, verbose_name="点击率")
+    create_time = models.DateTimeField(default=datetime.now(), verbose_name="创建时间")
 
     class Meta:
         verbose_name = "数据来源"
