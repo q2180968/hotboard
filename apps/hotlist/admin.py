@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Source, Kind, HostList
+from hotlist.models import Source, Kind, HostList
 
 
 class UserProfileAdmin(admin.ModelAdmin):

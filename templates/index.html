@@ -12,83 +12,18 @@
                                 <div class="m-n"></div>
                             </div>
                             <div class="qc-cc-c">
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/mproPpoq6O">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/zhihu.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
+                                {% for source in hot_source %}
+                                    <div class="zb-kc">
+                                        <a href="https://tophub.today/n/mproPpoq6O">
+                                            <div class="zb-kc-i">
+                                                <div class="f">
+                                                    <img class="f-g" src="/media/{{ source.image }}">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">知乎热榜</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/KqndgxeLl9">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/s.weibo.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">微博热搜榜</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/WnBe01o371">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/mp.weixin.qq.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">微信24h热文榜</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/wWmoO5Rd4E">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/thepaper.cn.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">澎湃新闻今日排行</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/NKGoRAzel6">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/52pojie.cn.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">吾爱破解今日热帖</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/Jb0vmloB1G">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/baidu.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">百度实时热点</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/Y3QeLGAd7k">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/qdaily.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">好奇心日报Top15</div>
-                                    </a>
-                                </div>
+                                            <div class="zb-kc-Cb">{{ source.title }}</div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
                             </div>
                             <div class="qc-cc-A">
                             </div>
@@ -100,160 +35,19 @@
                                 <div class="m-n"></div>
                             </div>
                             <div class="qc-cc-c">
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/4Kvx6n1ekx">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/hansiji.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
+                                {% for source in new_source %}
+                                    <div class="zb-kc">
+                                        <a href="https://tophub.today/n/4Kvx6n1ekx">
+                                            <div class="zb-kc-i">
+                                                <div class="f">
+                                                    <img class="f-g" src="/media/{{ source.image }}"
+                                                         onerror="this.onerror=null;;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">5X兴趣社区24小时热评</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/1VdJPEMoLQ">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/ibag.ly.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">iBag包包新包杂志</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/0MdKag9ow1">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/iwatch.ly.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">每日腕表杂志每日新闻</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/1Vd5x4Nv85">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/igem.ly.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">每日珠宝杂志每日新闻</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/1VdJPbgoLQ">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/designernews.co.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">Designer News</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/0MdKab8ow1">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/bookfere.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">书伴</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/YqoXQEqvOD">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/gaoloumi.cc.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">高楼迷今日热帖</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/x9ozB8noXb">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/txrjy.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">通信人家园24小时热帖</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/aEdZ2AkdrO">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/m.jinrongbaguanv.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">金融八卦女每日八卦</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/2me38D0owj">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/bbs.co188.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">土木在线热门帖子</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/VaobJAPoAj">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/allthings.how.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">All Things How</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/aEdZ2gNdrO">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/poppur.com.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">POPPUR卟扒</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/DgeyxkwdZq">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/kepuchina.cn.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">科普中国网热点排行</div>
-                                    </a>
-                                </div>
-                                <div class="zb-kc">
-                                    <a href="https://tophub.today/n/MZd7xz3erO">
-                                        <div class="zb-kc-i">
-                                            <div class="f">
-                                                <img class="f-g" src="./今日热榜_files/lkong.net.png"
-                                                     onerror="this.onerror=null;this.src=&#39;https://file.ipadown.com/tophub/assets/images/nodomain.png&#39;">
-                                            </div>
-                                        </div>
-                                        <div class="zb-kc-Cb">龙的天空今日热门</div>
-                                    </a>
-                                </div>
+                                            <div class="zb-kc-Cb">{{ source.title }}</div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
                             </div>
                             <div class="qc-cc-A"></div>
                             <div class="o"></div>
