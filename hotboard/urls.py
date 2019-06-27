@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from hotboard.settings import MEDIA_ROOT
 from django.views.static import serve
-from hotlist.views import IndexView
+from apps.hotlist.views import IndexView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

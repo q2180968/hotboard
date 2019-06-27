@@ -15,6 +15,7 @@ class Source(models.Model):
     kind = models.ForeignKey("Kind", verbose_name="来源类型")
     click_times = models.IntegerField(default=0, verbose_name="点击率")
     create_time = models.DateTimeField(default=datetime.now(), verbose_name="创建时间")
+    lable = models.CharField(max_length=20, verbose_name='数据来源标签', null=True, blank=True)
 
     class Meta:
         verbose_name = "数据来源"
@@ -45,7 +46,6 @@ class HostList(models.Model):
     title = models.CharField(max_length=200, verbose_name="热榜标题")
     href = models.CharField(max_length=200, verbose_name="链接")
     label = models.CharField(max_length=20, verbose_name="量化标签")
-    tabs = models.CharField(max_length=20, verbose_name="属性标签")
     source = models.ForeignKey("Source", verbose_name="热榜来源")
 
     class Meta:

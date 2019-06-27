@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.base import View
-from hotlist.models import Source
+from apps.hotlist.models import Source
 
 
 # 首页
